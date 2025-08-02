@@ -11,6 +11,8 @@ Welcome to the Claude Config documentation. This repository contains a collectio
 
 Claude Config is a configuration system that provides pre-configured AI agents with specific expertise in various domains. Each agent is optimized for particular tasks, ensuring you get the most accurate and helpful responses for your specific needs.
 
+This project is hosted and maintained by [Genval AI](https://genval.ai), a platform that revolutionizes development with AI-powered code generation, refactoring, and development tools.
+
 ## Features
 
 - **Specialized Agents**: Pre-configured AI agents with expertise in specific domains

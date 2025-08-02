@@ -24,6 +24,9 @@ function HomepageHeader() {
             Get Started →
           </Link>
         </div>
+        <p className="hero__subtitle" style={{marginTop: '2rem', fontSize: '0.9rem', opacity: 0.8}}>
+          Hosted by <Link to="https://genval.ai" style={{color: 'inherit'}}>Genval AI</Link>
+        </p>
       </div>
     </header>
   );

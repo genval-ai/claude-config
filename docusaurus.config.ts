@@ -109,8 +109,21 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Genval AI',
+          items: [
+            {
+              label: 'Visit Genval AI',
+              href: 'https://genval.ai',
+            },
+            {
+              label: 'About',
+              href: 'https://genval.ai/#about',
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Claude Config. Built with Docusaurus.`,
+      copyright: `Hosted by <a href="https://genval.ai" target="_blank" rel="noopener noreferrer">Genval AI</a> - Revolutionize Your Development with AI<br/>Copyright © ${new Date().getFullYear()} Claude Config. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
