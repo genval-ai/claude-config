@@ -29,6 +29,7 @@ This is thought leadership through transparency: see our actual agent configurat
 - **🔐 Security Architect**: Our security expert for authentication, encryption, and compliance
 - **☁️ Cloudflare SaaS Architect**: Designs our edge-first architecture
 - **🗄️ DynamoDB Solution Architect**: Manages our NoSQL data layer
+- **🏗️ Terraform Infrastructure Architect**: Builds and manages our infrastructure as code
 
 ### Frontend & Documentation
 - **🎨 Tailwind Design System Architect**: Maintains our component library and design system
@@ -37,6 +38,7 @@ This is thought leadership through transparency: see our actual agent configurat
 ### Quality & Process
 - **📋 Task Orchestrator**: Our project manager who breaks down complex features and coordinates agent work
 - **🚫 No Fallback Enforcer**: Ensures our code maintains strict quality standards without shortcuts
+- **🧠 Cognitive Load Assessor**: Analyzes complexity and ensures our solutions remain user-friendly
 
 ## How We Work Together
 
