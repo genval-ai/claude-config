@@ -26,6 +26,9 @@ This section contains documentation for all specialized AI agents available in t
 - **[Docusaurus Docs Expert](./docusaurus-docs-expert)** - Documentation site creation with Docusaurus
 - **[Tailwind Design System Architect](./tailwind-design-system-architect)** - Tailwind CSS design systems
 
+### Development & Code Quality
+- **[Code Optimizer](./code-optimizer)** - Code performance analysis and optimization
+
 ### Orchestration
 - **[Task Orchestrator](./task-orchestrator)** - Task decomposition and agent coordination
 
