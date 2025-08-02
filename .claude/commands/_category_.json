@@ -1,0 +1,10 @@
+{
+  "label": "Commands",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Available Commands",
+    "description": "Explore the commands available for interacting with Claude agents.",
+    "slug": "/commands"
+  }
+}
