@@ -1,18 +1,20 @@
-import type {ReactNode} from 'react';
+import {lazy, Suspense, type ReactNode} from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
+  id: string;
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  svgPath: string;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
+    id: 'real-dev-team',
     title: 'Real Development Team',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    svgPath: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
         Meet the AI agents we use daily at Genval AI. Each agent represents
@@ -21,8 +23,9 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    id: 'practical-examples',
     title: 'Practical Examples',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    svgPath: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
         See how we orchestrate multiple agents to build features, optimize code,
@@ -31,8 +34,9 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
+    id: 'industry-leadership',
     title: 'Industry Thought Leadership',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    svgPath: '/img/undraw_docusaurus_react.svg',
     description: (
       <>
         Learn from our experience using AI agents in production. Discover patterns,
@@ -42,11 +46,22 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+// Lazy load SVG components
+const SvgComponents: Record<string, React.LazyExoticComponent<React.ComponentType<React.ComponentProps<'svg'>>>> = {
+  '/img/undraw_docusaurus_mountain.svg': lazy(() => import('@site/static/img/undraw_docusaurus_mountain.svg')),
+  '/img/undraw_docusaurus_tree.svg': lazy(() => import('@site/static/img/undraw_docusaurus_tree.svg')),
+  '/img/undraw_docusaurus_react.svg': lazy(() => import('@site/static/img/undraw_docusaurus_react.svg')),
+};
+
+function Feature({title, svgPath, description}: FeatureItem) {
+  const SvgComponent = SvgComponents[svgPath];
+  
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Suspense fallback={<div className={styles.svgPlaceholder} />}>
+          <SvgComponent className={styles.featureSvg} role="img" />
+        </Suspense>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -61,8 +76,8 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.id} {...props} />
           ))}
         </div>
       </div>

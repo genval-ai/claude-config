@@ -1,0 +1,62 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 2rem;
+}
+
+.errorContent {
+  text-align: center;
+  max-width: 600px;
+}
+
+.errorTitle {
+  font-size: 2rem;
+  color: var(--ifm-color-danger);
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  font-size: 1.1rem;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 2rem;
+}
+
+.errorDetails {
+  margin: 2rem 0;
+  text-align: left;
+  background-color: var(--ifm-code-background);
+  padding: 1rem;
+  border-radius: var(--ifm-code-border-radius);
+}
+
+.errorDetails summary {
+  cursor: pointer;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.errorStack {
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.resetButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: var(--ifm-button-border-radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.resetButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+}

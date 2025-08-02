@@ -36,6 +36,10 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    './plugins/webpack-bundle-analyzer',
+  ],
+
   presets: [
     [
       'classic',
@@ -55,6 +59,44 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Content-Security-Policy',
+        content: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: https:; connect-src 'self' https://api.github.com;",
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'X-Frame-Options',
+        content: 'SAMEORIGIN',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'X-Content-Type-Options',
+        content: 'nosniff',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Referrer-Policy',
+        content: 'strict-origin-when-cross-origin',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        'http-equiv': 'Permissions-Policy',
+        content: 'accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()',
+      },
+    },
   ],
 
   themeConfig: {

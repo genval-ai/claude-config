@@ -1,47 +1,37 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+import {lazy, Suspense, type ReactNode} from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import HomepageHeader from '@site/src/components/HomepageHeader';
+import ErrorBoundary from '@site/src/components/ErrorBoundary';
+import PerformanceDashboard from '@site/src/components/PerformanceDashboard';
+import { usePerformanceMonitor } from '@site/src/hooks/usePerformanceMonitor';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/">
-            Get Started →
-          </Link>
-        </div>
-        <p className="hero__subtitle" style={{marginTop: '2rem', fontSize: '0.9rem', opacity: 0.8}}>
-          Hosted by <Link to="https://genval.ai" style={{color: 'inherit'}}>Genval AI</Link>
-        </p>
-      </div>
-    </header>
-  );
-}
+// Lazy load HomepageFeatures for code splitting
+const HomepageFeatures = lazy(() => import('@site/src/components/HomepageFeatures'));
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
+  
+  // Initialize performance monitoring
+  usePerformanceMonitor();
+  
   return (
     <Layout
       title={siteConfig.title}
       description="Configuration system for Claude AI assistants - specialized agents and commands for enhanced development workflows">
-      <HomepageHeader />
+      <ErrorBoundary>
+        <HomepageHeader />
+      </ErrorBoundary>
       <main>
-        <HomepageFeatures />
+        <ErrorBoundary>
+          <Suspense fallback={<div className={styles.featuresSkeleton}>Loading features...</div>}>
+            <HomepageFeatures />
+          </Suspense>
+        </ErrorBoundary>
       </main>
+      <PerformanceDashboard />
     </Layout>
   );
 }
