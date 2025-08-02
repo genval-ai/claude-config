@@ -21,20 +21,22 @@ This is thought leadership through transparency: see our actual agent configurat
 
 ### Development & Operations
 - **🐙 GitHub Actions Optimizer**: Our CI/CD specialist who keeps our pipelines fast and efficient
-- **DevContainer Optimizer**: Ensures every developer has a perfect environment
-- **Code Optimizer**: Reviews and optimizes our algorithms for production performance
+- **📦 DevContainer Optimizer**: Ensures every developer has a perfect environment
+- **⚡ Code Optimizer**: Reviews and optimizes our algorithms for production performance
+- **🌳 Monorepo Turbo Expert**: Manages our monorepo architecture and build systems
 
 ### Architecture & Security
-- **Security Architect**: Our security expert for authentication, encryption, and compliance
-- **Cloudflare SaaS Architect**: Designs our edge-first architecture
-- **DynamoDB Solution Architect**: Manages our NoSQL data layer
+- **🔐 Security Architect**: Our security expert for authentication, encryption, and compliance
+- **☁️ Cloudflare SaaS Architect**: Designs our edge-first architecture
+- **🗄️ DynamoDB Solution Architect**: Manages our NoSQL data layer
 
 ### Frontend & Documentation
-- **Tailwind Design System Architect**: Maintains our component library and design system
-- **Docusaurus Docs Expert**: Keeps our documentation professional and accessible
+- **🎨 Tailwind Design System Architect**: Maintains our component library and design system
+- **📚 Docusaurus Docs Expert**: Keeps our documentation professional and accessible
 
-### Orchestration
-- **Task Orchestrator**: Our project manager who breaks down complex features and coordinates agent work
+### Quality & Process
+- **📋 Task Orchestrator**: Our project manager who breaks down complex features and coordinates agent work
+- **🚫 No Fallback Enforcer**: Ensures our code maintains strict quality standards without shortcuts
 
 ## How We Work Together
 
