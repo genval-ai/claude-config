@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Specialized Agents',
+    title: 'Real Development Team',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Pre-configured AI agents with deep expertise in specific domains like
-        security, cloud architecture, and development tools.
+        Meet the AI agents we use daily at Genval AI. Each agent represents
+        a specialist on our development team, working on real production software.
       </>
     ),
   },
   {
-    title: 'Task-Specific Commands',
+    title: 'Practical Examples',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Streamlined commands that help you interact with agents efficiently,
-        orchestrating complex tasks with simple instructions.
+        See how we orchestrate multiple agents to build features, optimize code,
+        and maintain enterprise systems - not theory, but actual practice.
       </>
     ),
   },
   {
-    title: 'Best Practices Built-In',
+    title: 'Industry Thought Leadership',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Each agent follows industry best practices and patterns, ensuring
-        high-quality outputs aligned with modern standards.
+        Learn from our experience using AI agents in production. Discover patterns,
+        best practices, and real-world insights for agent-driven development.
       </>
     ),
   },

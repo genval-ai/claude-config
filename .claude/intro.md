@@ -3,58 +3,58 @@ sidebar_position: 1
 slug: /
 ---
 
-# Claude Config Documentation
+# Meet the Genval AI Development Team
 
-Welcome to the Claude Config documentation. This repository contains a collection of specialized Claude AI agent configurations and commands designed to enhance your development workflow.
+Welcome to our AI agent showcase. This isn't just documentation - it's a window into how Genval AI actually builds software using specialized AI agents as integral members of our development team.
 
-## What is Claude Config?
+## Real Agents, Real Work
 
-Claude Config is a configuration system that provides pre-configured AI agents with specific expertise in various domains. Each agent is optimized for particular tasks, ensuring you get the most accurate and helpful responses for your specific needs.
+At Genval AI, we don't just talk about AI-assisted development - we live it. Every agent documented here is actively used in our daily work building production software. From optimizing GitHub Actions workflows to architecting cloud-native solutions, these agents represent the specialized expertise we rely on.
 
-This project is hosted and maintained by [Genval AI](https://genval.ai), a platform that revolutionizes development with AI-powered code generation, refactoring, and development tools.
+## Why We're Sharing This
 
-## Features
+The software industry is at an inflection point. AI agents aren't just tools anymore - they're team members with deep expertise. By opening our agent configurations, we're showing exactly how a modern development team can leverage AI specialists to build better software, faster.
 
-- **Specialized Agents**: Pre-configured AI agents with expertise in specific domains
-- **Custom Commands**: Task-specific commands to streamline your workflow
-- **Modular Design**: Easy to add, modify, or remove configurations
-- **Best Practices**: Each agent follows industry best practices for its domain
+This is thought leadership through transparency: see our actual agent configurations, understand our workflows, and learn from our real-world experience.
 
-## Getting Started
+## Our Agent Team
 
-### Using Agents
+### Development & Operations
+- **GitHub Actions Optimizer**: Our CI/CD specialist who keeps our pipelines fast and efficient
+- **DevContainer Optimizer**: Ensures every developer has a perfect environment
+- **Code Optimizer**: Reviews and optimizes our algorithms for production performance
 
-Agents are specialized configurations that provide expertise in specific domains. You'll find agents for:
+### Architecture & Security
+- **Security Architect**: Our security expert for authentication, encryption, and compliance
+- **Cloudflare SaaS Architect**: Designs our edge-first architecture
+- **DynamoDB Solution Architect**: Manages our NoSQL data layer
 
-- **Architecture & Design**: System architecture, security, and design patterns
-- **Development Tools**: GitHub Actions, DevContainers, and build tools
-- **Frontend**: Tailwind CSS, design systems, and UI development
-- **Documentation**: Docusaurus and technical writing
-- **Cloud Services**: AWS, Cloudflare, and other cloud platforms
+### Frontend & Documentation
+- **Tailwind Design System Architect**: Maintains our component library and design system
+- **Docusaurus Docs Expert**: Keeps our documentation professional and accessible
 
-### Using Commands
+### Orchestration
+- **Task Orchestrator**: Our project manager who breaks down complex features and coordinates agent work
 
-Commands provide task-specific functionality. Browse the available commands in the sidebar navigation.
+## How We Work Together
 
-## Contributing
+Watch how these agents collaborate on real tasks. The Task Orchestrator analyzes requirements, assigns work to specialists, and ensures consistent delivery. This isn't theoretical - it's exactly how we built the platform you're reading about.
 
-To contribute new agents or commands:
+## Learn From Our Experience
 
-1. Create a new markdown file in the appropriate directory
-2. Follow the existing format with proper frontmatter
-3. Include clear descriptions and usage examples
-4. Submit a pull request
+### For Engineering Leaders
+See how AI agents can augment your team without replacing human creativity and decision-making. Our agents handle the specialized, repetitive work while developers focus on innovation.
 
-## Repository Structure
+### For Developers
+Understand how to work alongside AI agents effectively. Learn patterns for agent interaction, task delegation, and quality control from our production experience.
 
-```
-claude-config/
-├── .claude/
-│   ├── agents/       # Agent configurations
-│   └── commands/     # Command configurations
-└── docs/            # This documentation site
-```
+### For the Industry
+This is what the future of software development looks like. Not AI replacing developers, but AI specialists joining development teams as valued contributors.
 
-## License
+## Open Source Commitment
 
-This project is open source. See the repository for license details.
+We believe in advancing the industry through openness. These agent configurations are freely available for you to use, modify, and learn from. Build your own agent team using our battle-tested foundations.
+
+---
+
+*Genval AI - Revolutionizing Development with AI*

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Claude Config',
-  tagline: 'Configuration system for Claude AI assistants',
+  title: 'Genval AI Agent Team',
+  tagline: 'How We Build Software with AI Agents - A Real-World Showcase',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -114,7 +114,7 @@ const config: Config = {
             },
             {
               label: 'About',
-              href: 'https://genval.ai/#about',
+              href: 'https://genval.ai/about.html',
             },
           ],
         },
