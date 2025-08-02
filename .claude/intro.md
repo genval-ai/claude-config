@@ -24,7 +24,7 @@ This project is hosted and maintained by [Genval AI](https://genval.ai), a platf
 
 ### Using Agents
 
-Agents are specialized configurations that provide expertise in specific domains. Browse the [Agents](./agents) section to find agents for:
+Agents are specialized configurations that provide expertise in specific domains. You'll find agents for:
 
 - **Architecture & Design**: System architecture, security, and design patterns
 - **Development Tools**: GitHub Actions, DevContainers, and build tools
@@ -34,7 +34,7 @@ Agents are specialized configurations that provide expertise in specific domains
 
 ### Using Commands
 
-Commands provide task-specific functionality. Check the [Commands](./commands) section for available commands.
+Commands provide task-specific functionality. Browse the available commands in the sidebar navigation.
 
 ## Contributing
 

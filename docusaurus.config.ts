@@ -87,12 +87,8 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
-              label: 'Agents',
-              to: '/docs/agents',
-            },
-            {
-              label: 'Commands',
-              to: '/docs/commands',
+              label: 'Get Started',
+              to: '/docs/',
             },
           ],
         },
