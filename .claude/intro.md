@@ -20,7 +20,7 @@ This is thought leadership through transparency: see our actual agent configurat
 ## Our Agent Team
 
 ### Development & Operations
-- **GitHub Actions Optimizer**: Our CI/CD specialist who keeps our pipelines fast and efficient
+- **🐙 GitHub Actions Optimizer**: Our CI/CD specialist who keeps our pipelines fast and efficient
 - **DevContainer Optimizer**: Ensures every developer has a perfect environment
 - **Code Optimizer**: Reviews and optimizes our algorithms for production performance
 
