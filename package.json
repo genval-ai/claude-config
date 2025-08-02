@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "Documentation for Claude Config - AI agent configurations",
+  "license": "MIT",
+  "author": "Genval LLC",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

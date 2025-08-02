@@ -53,7 +53,9 @@ This is what the future of software development looks like. Not AI replacing dev
 
 ## Open Source Commitment
 
-We believe in advancing the industry through openness. These agent configurations are freely available for you to use, modify, and learn from. Build your own agent team using our battle-tested foundations.
+We believe in advancing the industry through openness. These agent configurations are freely available under the MIT License for you to use, modify, and learn from. Build your own agent team using our battle-tested foundations.
+
+All we ask is that you include attribution to Genval LLC when using these configurations.
 
 ---
 
